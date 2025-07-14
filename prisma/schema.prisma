@@ -8,11 +8,12 @@ datasource db {
 }
 
 model Blog {
-  id        String    @id @default(uuid())
-  text      String
-  image     String?
-  Comment   Comment[]
-  createdAt DateTime  @default(now())
+  id          String    @id @default(uuid())
+  text        String
+  description String?
+  image       String?
+  Comment     Comment[]
+  createdAt   DateTime  @default(now())
 }
 
 model Comment {
